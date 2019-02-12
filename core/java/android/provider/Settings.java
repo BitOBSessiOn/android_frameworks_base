@@ -4666,16 +4666,6 @@ public final class Settings {
         public static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
 
         /**
-         * Weather lockscreen temperature scale
-         * @hide
-         */
-        public static final String WEATHER_LOCKSCREEN_UNIT = "weather_lockscreen_unit";
-
-        /** @hide */
-        private static final Validator WEATHER_LOCKSCREEN_UNIT_VALIDATOR =
-               BOOLEAN_VALIDATOR;
-
-        /**
          * Setting to disable rounded corner preferences and use frameworks values instead
          * @hide
          */
@@ -5147,7 +5137,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(OMNI_NETWORK_TRAFFIC_STATE);
             PRIVATE_SETTINGS.add(OMNI_NETWORK_TRAFFIC_AUTOHIDE);
             PRIVATE_SETTINGS.add(OMNI_NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
-            PRIVATE_SETTINGS.add(WEATHER_LOCKSCREEN_UNIT);
             PRIVATE_SETTINGS.add(OMNI_STATUS_BAR_QUICK_QS_PULLDOWN);
             PRIVATE_SETTINGS.add(OMNI_LOCK_QS_DISABLED);
             PRIVATE_SETTINGS.add(OMNI_SYSUI_ROUNDED_FWVALS);
@@ -5343,7 +5332,6 @@ public final class Settings {
                     OMNI_NETWORK_TRAFFIC_AUTOHIDE_VALIDATOR);
             VALIDATORS.put(OMNI_NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD,
                     OMNI_NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD_VALIDATOR);
-            VALIDATORS.put(WEATHER_LOCKSCREEN_UNIT, WEATHER_LOCKSCREEN_UNIT_VALIDATOR);
             VALIDATORS.put(OMNI_STATUS_BAR_QUICK_QS_PULLDOWN,
                     OMNI_STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR);
             VALIDATORS.put(OMNI_LOCK_QS_DISABLED, OMNI_LOCK_QS_DISABLED_VALIDATOR);
