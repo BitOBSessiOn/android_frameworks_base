@@ -4805,6 +4805,16 @@ public final class Settings {
                 BOOLEAN_VALIDATOR;
 
         /**
+         * Enable face auto unlock on secure lock screens
+         *
+         * @hide
+         */
+        public static final String OMNI_DISPLAY_MODE = "omni_display_mode";
+
+        private static final Validator OMNI_DISPLAY_MODE_VALIDATOR =
+                ANY_INTEGER_VALIDATOR;
+
+        /**
          * Three Finger Gesture from Oppo
          * @hide
          */
@@ -4969,7 +4979,8 @@ public final class Settings {
             OMNI_NAVIGATION_BAR_ARROW_KEYS,
             OMNI_VOLUME_BUTTON_MUSIC_CONTROL,
             OMNI_FACE_AUTO_UNLOCK,
-            FORCE_FULLSCREEN_CUTOUT_APPS
+            FORCE_FULLSCREEN_CUTOUT_APPS,
+            OMNI_DISPLAY_MODE,
         };
 
         /**
@@ -5154,6 +5165,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(OMNI_VOLUME_BUTTON_MUSIC_CONTROL);
             PRIVATE_SETTINGS.add(OMNI_FACE_AUTO_UNLOCK);
             PRIVATE_SETTINGS.add(FORCE_FULLSCREEN_CUTOUT_APPS);
+            PRIVATE_SETTINGS.add(OMNI_DISPLAY_MODE);
         }
 
         /**
@@ -5365,6 +5377,8 @@ public final class Settings {
                     OMNI_FACE_AUTO_UNLOCK_VALIDATOR);
             VALIDATORS.put(FORCE_FULLSCREEN_CUTOUT_APPS,
                     FORCE_FULLSCREEN_CUTOUT_APPS_VALIDATOR);
+            VALIDATORS.put(OMNI_DISPLAY_MODE,
+                    OMNI_DISPLAY_MODE_VALIDATOR);
         }
 
         /**
